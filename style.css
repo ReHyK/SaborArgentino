@@ -16,7 +16,7 @@ html {
 body {
     width: 100%;
     color: white;
-    background-image: url(./imagenes/fondo.png);
+    background-image: url(./Imagenes/fondo.png);
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-position: center;
