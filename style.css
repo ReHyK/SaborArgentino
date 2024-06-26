@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Rubik", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    background-color: black;
+}
+
+body {
+    width: 100%;
+    color: white;
+    background-image: url(./imagenes/fondo.png);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+:root {
+    --black: #131415;
+    --grey: #242121;
+    --white: #FFFFFF;
+    --blue: #161C72;
+    --optional: #353B40;
+}
+
+.section-container {
+    background-color: var(--black);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--black);
+    border: 0px solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: var(--optional);
+    transition: all 0.4s ease-in;
+}
+
+
+
+.header-container {
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px 0px 50px;
+}
+
+.imag {
+    width: 100px;
+}
+
+.logo-container {
+        display: flex;
+    align-items: center;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cubo {
+    border: 1px solid white;
+    font: 14px;
+    padding: 8px 25px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.cubo:hover {
+    background-color: var(--blue);
+    color: var(--blue);
+    transition: all 0.3s linear;
+    font-weight: 700;
+}
+
+.navbar i {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.hero-image {
+    position: relative;
+    background: url(./Imagenes/fondoeditado.png);
+    background-size: cover;
+    height: 880px;
+    overflow: hidden;
+}
+
+.hero-container {
+    margin-top: 300px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.text-container {
+    max-width: max(40%), 300px;
+}
+
+.text-container h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-container p {
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#about-us {
+    background-color: var(--black);
+    gap: 15%;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    background-image: url(./Imagenes/empanada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    max-width: 650px;
+    flex: 1 1 500px;
+    border-radius: 25px;
+}
+
+.about-img2 {
+    background-image: url(./Imagenes/asado.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    max-width: 650px;
+    flex: 1 1 500px;
+    border-radius: 25px;
+}
+
+.about-img3 {
+    background-image: url(./Imagenes/milanesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    max-width: 650px;
+    flex: 1 1 500px;
+    border-radius: 25px;
+}
+
+.about-img4 {
+    background-image: url(./Imagenes/choripan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    max-width: 650px;
+    flex: 1 1 500px;
+    border-radius: 25px;
+}
+
+.about-us-content {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    gap: 20px;
+}
+
+.section-tittle {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.section-p {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 30px;
+    width: 120%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+
+
+.evento-container {
+    background-image: url(./Imagenes/bandera.png);
+    background-size: 50%;
+    position: relative;
+}
+
+#eventos {
+    flex-direction: column;
+    gap: max(120px, 10%);
+}
+
+.title-evento {
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+.title-evento:hover {
+    font-size: 50px;
+}
+
+.evento-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.card {
+    background: var(--black);
+    width: 300px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.card-tamaño {
+    height: 280px;
+    margin-bottom: 18px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    border: solid var(--white) 2px;
+}
+
+.img-card-1 {
+    background-image: url(./Imagenes/fiestaempanada.png);
+}
+
+.img-card-2 {
+    background-image: url(./Imagenes/festivalmilanesa.png);
+}
+
+.img-card-3 {
+    background-image: url(./Imagenes/FestivalAsado.png);
+}
+
+.card-title {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    background-color: var(--optional-2);
+    margin: 20px 50px;
+    width: 200px;
+}
+
+.boton a {
+    color: var(--white);
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+
+
+
+body {
+    background-image: url(./imagenes/fondo.png);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(1.5px);
+    width: 28%;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2em;
+    color: white;
+    margin-top: 25px
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 35px;
+}
+
+.tamaño::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+.tamaño {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    width: 70%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 13px;
+}
+
+.ingresars {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    height: 50px;
+    width: 40%;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+.registrarses {
+    font-size: 0.8em;
+    color: white;
+}
+
+.registrarses a:hover {
+    color: #002D38;
+}
+
+.registrarses a{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+body {
+    background-image: url(./imagenes/fondo.png);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(1.5px);
+    width: 28%;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    color: white;
+    margin-top: 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 45px;
+    gap: 10px;
+}
+
+input {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 40%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 13px;
+    text-align: center;
+}
+
+.pass {
+    font-size: 0.8em;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pass:hover {
+    color: #002D38;
+}
+
+.ingresar {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    height: 50px;
+    width: 40%;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+label {
+    font-size: 25px;
+    color: white;
+}
+
+.registrarse {
+    font-size: 0.8em;
+    color: white;
+}
+
+.registrarse a:hover {
+    color: #002D38;
+}
+
+.registrarse a{
+    color: var(--white);
+    text-decoration: underline;
+} 
+
