@@ -321,17 +321,6 @@ button:hover {
     margin-top: 8px;
 }
 
-
-
-
-body {
-    background-image: url(./imagenes/fondo.png);
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
 .container-flex {
     display: flex;
     justify-content: center;
@@ -416,14 +405,6 @@ label {
     text-decoration: underline;
 }
 
-
-body {
-    background-image: url(./imagenes/fondo.png);
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
 
 .container-flex {
     display: flex;
